@@ -7,7 +7,7 @@
 //define('APPPATH', realpath(__DIR__.'/../app/').DIRECTORY_SEPARATOR);
 //
 //require APPPATH."bootstrap.php";
-require "../vendor/autoload.php"
+require "../vendor/autoload.php";
 $test = new App\Classes\TestController();
 echo $test->test();
 
