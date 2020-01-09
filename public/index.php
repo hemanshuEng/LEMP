@@ -1,10 +1,14 @@
 <?php
+/**
+ * Website document root
+ */
+define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
 
-/** Just a test file */
+define('APPPATH', realpath(__DIR__.'/../app/').DIRECTORY_SEPARATOR);
 
-echo 'Checking mysql connection : ';
+require APPPATH."bootstrap.php";
 
-new PDO('mysql:host=' . getenv('DB_HOST') . ';dbname=' . getenv('DB_NAME'), getenv('DB_USER'), getenv('DB_PASSWORD'));
-new mysqli(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASSWORD'), getenv('DB_NAME'));
+$test = new App\Classes\TestController();
+echo $test->test();
 
-echo 'OK';
+
