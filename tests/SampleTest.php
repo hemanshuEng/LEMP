@@ -1,6 +1,6 @@
 <?php
 
-use App\Classes\TestController;
+//use App\Classes\TestController;
 use PHPUnit\Framework\TestCase;
 
 class SampleTest extends TestCase
@@ -9,10 +9,10 @@ class SampleTest extends TestCase
     {
         $this->assertEquals(0,0,"unittestsample");
     }
-    public function testToAssertClass()
-    {
-        $app = new TestController();
-
-        $this->assertInstanceOf(TestController::class,$app,"unittestsample");
-    }
+//    public function testToAssertClass()
+//    {
+//        $app = new TestController();
+//
+//        $this->assertInstanceOf(TestController::class,$app,"unittestsample");
+//    }
 }
