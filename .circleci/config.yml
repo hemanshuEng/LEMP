@@ -38,7 +38,9 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-
+    dependencies:
+      override:
+        - composer install --prefer-source --no-interaction --no-dev
 
       # run tests with phpunit or codecept
       #- run: ./vendor/bin/phpunit
