@@ -1,12 +1,12 @@
+
 <?php
 
-namespace App\classes;
-
+namespace App\Classes;
 
 class TestController
 {
     public function test()
     {
-        return "This is the test";
+        return "hemanshu";
     }
 }
