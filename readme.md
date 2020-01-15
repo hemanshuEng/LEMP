@@ -33,3 +33,4 @@ If you change mysql credentials in .env you have to re-create mysql container:
 - Remove container and volume : `$ docker-compose rm -fv mysql`
 - Run : `docker-compose up` 
 - Re-import your database on PhpMyAdmin
+- new 
